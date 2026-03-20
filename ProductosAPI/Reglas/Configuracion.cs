@@ -1,0 +1,21 @@
+﻿using Abstracciones.Interfaces.Reglas;
+using Microsoft.Extensions.Configuration;
+
+namespace Reglas
+{
+    public class Configuracion : IConfiguracion
+    {
+        private IConfiguration _configuration;
+
+        public Configuracion(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
+
+        public string ObtenerValor(string llave)
+        {
+            return _configuration[llave];
+        }
+    }
+}
