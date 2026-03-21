@@ -25,6 +25,14 @@ builder.Services.AddScoped<IRepositorioDapper, RepositorioDapper>();
 builder.Services.AddScoped<IConfiguracion, Configuracion>();
 builder.Services.AddScoped<IProductoReglas, ProductoReglas>();
 
+builder.Services.AddScoped<ICategoriaDA, CategoriaDA>();
+builder.Services.AddScoped<ICategoriaFlujo, CategoriaFlujo>();
+
+builder.Services.AddScoped<ISubCategoriaDA, SubCategoriaDA>();
+builder.Services.AddScoped<ISubCategoriaFlujo, SubCategoriaFlujo>();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
