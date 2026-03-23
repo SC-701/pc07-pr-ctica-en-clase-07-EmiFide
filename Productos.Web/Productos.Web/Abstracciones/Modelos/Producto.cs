@@ -32,6 +32,7 @@ namespace Abstracciones.Modelos
     {
         [Required(ErrorMessage = "La subcategoría es obligatoria")]
         public Guid IdSubCategoria { get; set; }
+
     }
 
     public class ProductoResponse : ProductoBase

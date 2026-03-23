@@ -20,8 +20,6 @@
 
         <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto">
             <form method="post">
-
-                <!-- Categoría -->
                 <div class="form-group">
                     <label for="categorias">Categoría</label>
                     <select asp-for="categoriaSeleccionada"
@@ -32,8 +30,6 @@
                         <option value="">Seleccione una categoría</option>
                     </select>
                 </div>
-
-                <!-- Subcategoría -->
                 <div class="form-group">
                     <label for="subcategorias">Subcategoría</label>
                     <select asp-for="producto.IdSubCategoria"
@@ -43,35 +39,26 @@
                     </select>
                     <span class="text-danger" asp-validation-for="producto.IdSubCategoria"></span>
                 </div>
-
-                <!-- Nombre -->
                 <div class="form-group">
                     <label asp-for="producto.Nombre"></label>
                     <input class="form-control" asp-for="producto.Nombre" />
                     <span class="text-danger" asp-validation-for="producto.Nombre"></span>
                 </div>
-
-                <!-- Precio -->
                 <div class="form-group">
                     <label asp-for="producto.Precio"></label>
                     <input class="form-control" asp-for="producto.Precio" />
                     <span class="text-danger" asp-validation-for="producto.Precio"></span>
                 </div>
-
-                <!-- Stock -->
                 <div class="form-group">
                     <label asp-for="producto.Stock"></label>
                     <input class="form-control" asp-for="producto.Stock" />
                     <span class="text-danger" asp-validation-for="producto.Stock"></span>
                 </div>
-                <!-- Stock -->
                 <div class="form-group">
                     <label asp-for="producto.CodigoBarras"></label>
                     <input class="form-control" asp-for="producto.CodigoBarras" />
                     <span class="text-danger" asp-validation-for="producto.CodigoBarras"></span>
                 </div>
-
-                <!-- Descripción -->
                 <div class="form-group">
                     <label asp-for="producto.Descripcion"></label>
                     <input class="form-control" asp-for="producto.Descripcion" />
